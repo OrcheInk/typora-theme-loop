@@ -14,14 +14,15 @@
 
 ![temp](https://cdn.jsdelivr.net/gh/RicardoLop/PicGoImage/img/20200804170156.webp)
 
-## 支持内容和大纲的标题自动编号
+## 支持内容和大纲的标题自动编号 AutoNumber
 
 ![temp](https://cdn.jsdelivr.net/gh/RicardoLop/PicGoImage/img/20200804171250.webp)
 
-## 代码高亮
+## 代码高亮 Code highlighting
 
 ![temp](https://cdn.jsdelivr.net/gh/RicardoLop/PicGoImage/img/20200804171022.webp)
 
-## 其他
+## 其他 Else
 
 ![temp](https://cdn.jsdelivr.net/gh/RicardoLop/PicGoImage/img/20200804172037.webp)
+
