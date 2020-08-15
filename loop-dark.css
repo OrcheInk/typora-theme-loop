@@ -154,24 +154,28 @@ h2 {
 }
 
 h3 {
-    font-size: 1.4rem;
+    /* font-size: 1.4rem; */
+    font-size: 1.6rem;
     line-height: 1.43;
     margin: 20px 0px 7px 0px;
     color: rgba(18, 170, 156, 0.8);
 }
 
 h4 {
-    font-size: 1.2rem;
+    /* font-size: 1.2rem; */
+    font-size: 1.45rem;
     color: rgba(18, 170, 156, 0.7);
 }
 
 h5 {
-    font-size: 1rem;
+    /* font-size: 1rem; */
+    font-size: 1.3rem;
     color: rgba(18, 170, 156, 0.6);
 }
 
 h6 {
-    font-size: 1rem;
+    /* font-size: 1rem; */
+    font-size: 1.15rem;
     color: rgba(18, 170, 156, 0.5);
 }
 
@@ -235,6 +239,13 @@ a {
     font-weight: 600;
     padding: 0px 2px;
     text-decoration: none;
+}
+
+/* 注释 */
+
+.md-comment{
+    color: green;
+    opacity: 1;
 }
 
 /* 下划线 */
@@ -326,7 +337,7 @@ table tr th:last-child, table tr td:last-child {
     border-radius: 2px;
     font-family: var(--font-monospace);
     font-weight: bold;
-    font-size: 0.85rem;
+    font-size: 0.85em;
     word-wrap: normal;
 }
 
@@ -344,7 +355,7 @@ table tr th:last-child, table tr td:last-child {
     background: #2c2727;
     font-family: var(--font-monospace);
     font-weight: bold;
-    font-size: 0.85rem;
+    font-size: 0.85em;
     color: #fa7e23;
 }
 
@@ -381,8 +392,9 @@ tt {
 
 /* 粗体 */
 
-strong {
-    font-size: 1.2rem;
+#write strong {
+    /* font-size: 1.2rem; */
+    font-size: larger;
     color: #bec936;
 }
 
@@ -555,10 +567,13 @@ img {
     opacity: .6;
 }
 
+/* <> 标签 */
 .md-tag {
+    font-family: var(--font-mono);
     color: inherit;
 }
 
+/* 目录 */
 .md-toc {
     margin-top: 20px;
     padding-bottom: 20px;
