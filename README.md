@@ -1,28 +1,100 @@
-# typora-theme-loop
+# loop-dark
 
-> A dark theme for Typora with enhanced UI
+> 🎈 此主题适配于 *windows10* 专业版，其他情况下主题可能会有所变动。
 
-## 目录[TOC]
+## 自动编号
 
-![temp](https://cdn.jsdelivr.net/gh/RicardoLop/PicGoImage/img/20200804165817.webp)
+此主题会自动为文章中的所有**标题**和**大纲**添加编号，增减标题时也会自动匹配编号。
 
-## 引用 Quote
+## 段落
 
-![temp](https://cdn.jsdelivr.net/gh/RicardoLop/PicGoImage/img/20200804165903.webp)
+### 标题
 
-## 超链接 HyperLink
+![Headers](https://gitee.com/RicardoLP/image/raw/master/img/20220108182120.webp)
 
-![temp](https://cdn.jsdelivr.net/gh/RicardoLop/PicGoImage/img/20200804170156.webp)
+### 段落
 
-## 支持内容和大纲的标题自动编号 AutoNumber
+![Paragraphs](https://gitee.com/RicardoLP/image/raw/master/img/20220108182820.webp)
 
-![temp](https://cdn.jsdelivr.net/gh/RicardoLop/PicGoImage/img/20200804171250.webp)
+### 表格
 
-## 代码高亮 Code highlighting
+![Tables](https://gitee.com/RicardoLP/image/raw/master/img/20220108183508.webp)
 
-![temp](https://cdn.jsdelivr.net/gh/RicardoLop/PicGoImage/img/20200804171022.webp)
+### 公式块
 
-## 其他 Else
+![Math Blocks](https://gitee.com/RicardoLP/image/raw/master/img/20220108183704.webp)
 
-![temp](https://cdn.jsdelivr.net/gh/RicardoLop/PicGoImage/img/20200804172037.webp)
+### 代码块
+
+![Code Blocks](https://gitee.com/RicardoLP/image/raw/master/img/20220108183826.webp)
+
+### 引用
+
+![Blockquotes](https://gitee.com/RicardoLP/image/raw/master/img/20220108184050.webp)
+
+### 无序列表/有序列表
+
+![List](https://gitee.com/RicardoLP/image/raw/master/img/20220108184559.webp)
+
+### 任务列表
+
+![Task Lists](https://gitee.com/RicardoLP/image/raw/master/img/20220108184709.webp)
+
+### 链接引用
+
+![Links](https://gitee.com/RicardoLP/image/raw/master/img/20220108184859.webp)
+
+### 脚注
+
+![Footnotes](https://gitee.com/RicardoLP/image/raw/master/img/20220108185019.webp)
+
+### 水平分割线
+
+![Horizontal Rules](https://gitee.com/RicardoLP/image/raw/master/img/20220108185101.webp)
+
+### 内容目录
+
+![Table of Contents](https://gitee.com/RicardoLP/image/raw/master/img/20220108185216.webp)
+
+### YAML Front Matter
+
+![YAML](https://gitee.com/RicardoLP/image/raw/master/img/20220108185646.webp)
+
+## 格式
+
+### 加粗
+
+![Strong](https://gitee.com/RicardoLP/image/raw/master/img/20220108185809.webp)
+
+### 斜体
+
+![Emphasis](https://gitee.com/RicardoLP/image/raw/master/img/20220108190002.webp)
+
+### 下划线
+
+![Underlines](https://gitee.com/RicardoLP/image/raw/master/img/20220108190044.webp)
+
+### 代码
+
+![Code](https://gitee.com/RicardoLP/image/raw/master/img/20220108190208.webp)
+
+### 内联公式
+
+![Inline Math](https://gitee.com/RicardoLP/image/raw/master/img/20220108190428.webp)
+
+### 删除线
+
+![Strikethrough](https://gitee.com/RicardoLP/image/raw/master/img/20220108190512.webp)
+
+### 高亮
+
+![Highlight](https://gitee.com/RicardoLP/image/raw/master/img/20220108191043.webp)
+
+### 上标 / 下标
+
+![Subscript and Superscript](https://gitee.com/RicardoLP/image/raw/master/img/20220108191617.webp)
+
+### 注释
+
+![Comment](https://gitee.com/RicardoLP/image/raw/master/img/20220108192716.webp)
 
