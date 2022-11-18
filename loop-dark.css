@@ -388,6 +388,7 @@ tt {
 /* 斜体 */
 em {
     color: #41b349;
+    font-style: normal;
 }
 
 .cm-s-inner .cm-link, .cm-s-inner.cm-link {
