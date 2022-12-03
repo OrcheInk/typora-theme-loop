@@ -873,3 +873,20 @@ h3 {
 #typora-source .CodeMirror-lines {
     max-width: 1800px;
 }
+
+body.typora-export {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.typora-export-show-outline .typora-export-content{
+    max-width: 100% !important;
+}
+
+.typora-export-sidebar {
+    width: 27% !important;
+}
+
+.typora-export-sidebar .outline-content {
+    width: 27% !important;
+}
