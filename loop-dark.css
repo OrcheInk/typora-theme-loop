@@ -231,7 +231,7 @@ ul:last-child, ol:last-child {
 a {
     color: #2d8ad6;
     font-weight: 600;
-    padding: 0 2px;
+    padding-right: 10px;
     text-decoration: none;
 }
 
