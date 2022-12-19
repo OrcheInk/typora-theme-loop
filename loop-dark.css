@@ -421,9 +421,8 @@ em {
     content: url(./loop-dark/image/Completed.png);
 }
 
-
-.md-task-list-item > input {
-    margin-left: -1.3em;
+.md-task-list-item>input {
+    margin: -30px;
 }
 
 #write > ul > .task-list-done {
