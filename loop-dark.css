@@ -576,12 +576,12 @@ em {
   bottom: 0.375rem;
 }
 
-/* 行内公式：淡底，和行内代码的橙色块区分开 */
+/* 行内公式：沿用行内代码的底色与圆角，只是不换字色 */
 #write .md-inline-math-container {
   padding: 1px 4px;
-  border-radius: 5px;
-  background: #262b31;
-  border: 1px solid #343a41;
+  border-radius: 9px;
+  background: #2c2727;
+  border: 1px solid #4b454581;
 }
 
 #write > h3.md-focus:before {
