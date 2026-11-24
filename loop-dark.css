@@ -78,8 +78,7 @@ span.ion-close-round {
 }
 
 #file-library-search-input:focus {
-  outline: none;
-  border-color: var(--accent);
+  border-color: white;
 }
 
 .dropdown-menu > li > a:focus,
@@ -482,26 +481,10 @@ tt {
   margin: 0 2px;
 }
 
-/* 脚注标记：恢复原版的黑底橙字，加粗加边框，一眼能看见 */
+/* 脚注 */
 #write .md-footnote {
-  padding: 0 4px;
-  border-radius: 4px;
-  background-color: hsla(0, 0%, 0%, 0.35);
+  background-color: hsla(0, 0%, 0%, 0.2);
   color: #f3b37f;
-  font-size: 0.85em;
-  font-weight: 600;
-  border: 1px solid rgba(243, 179, 127, 0.45);
-}
-
-#write .md-footnote a {
-  color: inherit;
-}
-
-/* 文末脚注区：行距回到原版，加一条上分隔线做区分 */
-#write .footnotes {
-  margin-top: 1.6em;
-  padding-top: 0.8em;
-  border-top: 1px solid rgba(163, 176, 189, 0.25);
 }
 /* ========== 文本修饰 ========== */
 /* 高亮 */
@@ -763,10 +746,10 @@ em {
 
 /* 行内公式：沿用行内代码的底色与圆角，只是不换字色 */
 #write .md-inline-math-container {
-  padding: 1px 4px;
+  padding: 3px 8px;
   border-radius: 9px;
   background: #2c2727;
-  border: 1px solid #4b454581;
+  border: 2px solid #4b4545;
 }
 
 #write > h3.md-focus:before {
@@ -1368,99 +1351,45 @@ body.typora-export {
   border-radius: 4px;
 }
 
-/* ========== 搜索 / 替换面板 ========== */
-#md-searchpanel {
-  background: #23272e;
-  border-bottom: 1px solid #343a41;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.45);
-  padding: 6px 10px 4px 16px;
-}
-
+/* 搜索栏 */
 #md-searchpanel input {
-  height: 26px;
+  height: 30px;
+  border: 2px solid cornflowerblue;
+  border-radius: 5px !important;
+  background: inherit;
   width: 100%;
-  padding: 0 8px;
   font-size: 12px;
-  color: #d7dae0;
-  background: #1b1f24;
-  border: 1px solid #3a4149;
-  border-radius: 5px;
-  box-shadow: none;
 }
 
-#md-searchpanel input:focus {
-  outline: none;
-  border-color: var(--accent);
-  box-shadow: 0 0 0 2px rgba(66, 185, 131, 0.18);
-}
-
-#md-searchpanel .btn {
-  height: 26px;
-  line-height: 24px;
-  padding: 0 10px;
-  background: #2a3038;
-  border: 1px solid #3a4149;
-  border-radius: 5px;
-  color: #c3ccd4;
-  box-shadow: none;
-  text-shadow: none;
-}
-
-#md-searchpanel .btn:hover {
-  background: #333a43;
-  border-color: #4a535d;
-  color: #e8eef3;
-}
-
-/* 位置沿用原来的，只换配色：不再有 darkviolet 和纯白 */
-.searchpanel-search-option-btn {
-  position: absolute;
-  right: 6px;
-  top: 10px;
-  z-index: 99;
-  cursor: pointer;
-  margin-top: 1px;
-  padding: 1px 4px;
-  border-radius: 4px;
-  line-height: 14px;
-  color: #9aa6b2;
-  background: #2a3038;
-  border: 1px solid #3a4149;
-}
-
+/* 三个选项按钮：比原版下移 3px，落在 30px 输入框的垂直中线上 */
 #searchpanel-case-option-btn {
   right: 60px;
-  top: 10px;
+  top: 13px;
 }
 
 #searchpanel-word-option-btn {
   right: 33px;
-  top: 10px;
+  top: 13px;
 }
 
-.searchpanel-search-option-btn:hover {
-  color: #e8eef3;
-  border-color: #4a535d;
+.searchpanel-search-option-btn {
+  position: absolute;
+  right: 6px;
+  top: 13px;
+  z-index: 99;
+  cursor: pointer;
+  margin-top: 1px;
+  padding: 1px;
+  border-radius: 3px;
+  line-height: 10px;
+  background-color: darkviolet;
+  border: 1px solid #ddd;
+  border-color: var(--active-toggle-btn-color);
 }
 
 .searchpanel-search-option-btn.active {
-  background: rgba(66, 185, 131, 0.85);
-  border-color: var(--accent);
-  color: #0b1f16;
-}
-
-/* 侧栏的文件搜索框 */
-.ty-sidebar-search-panel {
-  background: #1d1d1d;
-  border-bottom: 1px solid #343a41;
-}
-
-#file-library-search-input {
-  padding: 0 8px;
-  color: #d7dae0;
-  background: #23272e;
-  border: 1px solid #3a4149;
-  border-radius: 5px;
+  background-color: #fff;
+  color: #000;
 }
 
 .ty-tooltip {
