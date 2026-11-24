@@ -14,12 +14,13 @@
   --item-hover-bg-color: var(--select-text-bg-color);
   --text-color: #a3b0bd;
 
-  --font-mono: "Fira Mono", "Cousine", "Consolas";
-  --font-monospace: "Fira Code";
-  --font-sans-serif: "Source Sans Pro", sans-serif !important;
+  /* 字体：拉丁走 Fira，中文走系统字体，任何一环缺失都能落到 monospace */
+  --font-mono: "Fira Code", "FiraCode Nerd Font Mono", "Roboto Mono", "Microsoft YaHei", "PingFang SC", Consolas, monospace;
+  --font-monospace: var(--font-mono);
+  --font-sans-serif: "Source Sans Pro", "Segoe UI", "Microsoft YaHei", "PingFang SC", system-ui, sans-serif;
 
   --mermaid-theme: night;
-  --mermaid-font-family: cursive;
+  --mermaid-font-family: var(--font-mono);
   --mermaid-sequence-numbers: on;
   --mermaid-flowchart-curve: basis;
   --mermaid--gantt-left-padding: 75;
