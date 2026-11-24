@@ -640,10 +640,6 @@ em {
     background: #dcdfe3 !important;
   }
 
-  #write .md-inline-math-container {
-    background: #f2f3f5 !important;
-    border-color: #dcdfe3 !important;
-  }
 
   #write code,
   tt {
@@ -744,13 +740,6 @@ em {
   bottom: 0.375rem;
 }
 
-/* 行内公式：沿用行内代码的底色与圆角，只是不换字色 */
-#write .md-inline-math-container {
-  padding: 3px 8px;
-  border-radius: 9px;
-  background: #2c2727;
-  border: 2px solid #4b4545;
-}
 
 #write > h3.md-focus:before {
   left: -1.5625rem;
