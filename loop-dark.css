@@ -359,17 +359,19 @@ table tr td:last-child {
 /* 代码块 */
 #write .md-fences {
   -webkit-font-smoothing: initial;
-  margin: 0.8rem 0 !important;
-  padding: 0.3rem 0rem !important;
-  line-height: 1.43rem;
-  color: hsl(0, 0%, 78%);
-  border: 1px solid hsl(0, 0%, 11%);
+  margin: 1.1rem 0 !important;
+  padding: 0.75rem 0.95rem !important;
+  line-height: 1.55;
+  color: #cfd8e0;
+  background: #23272e;
+  border: none;
   border-radius: 10px;
-  font-family: var(--font-monospace);
-  font-weight: bold;
-  font-size: 0.85em;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.28);
+  font-family: var(--font-code);
+  font-weight: 400;
+  font-size: 0.88em;
   word-wrap: normal;
-  scrollbar-width: none;
+  scrollbar-width: thin;
 }
 
 #write .CodeMirror-gutters {
