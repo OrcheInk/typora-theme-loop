@@ -13,6 +13,7 @@
   --window-border: #1d1d1d;
   --item-hover-bg-color: var(--select-text-bg-color);
   --text-color: #a3b0bd;
+  --accent: #42b983;
 
   /* 字体：正文雅黑，代码与行内码用主题自带的 FiraCode Nerd Font Mono 子集 */
   --font-body: "Segoe UI", "Microsoft YaHei", sans-serif;
@@ -298,11 +299,40 @@ u {
 
 /* 引用 */
 blockquote {
-  padding: 10px;
-  border-radius: 10px;
-  border: 5px solid #42b983;
-  color: #eeeeee;
-  background-color: rgba(66, 185, 131, 0.1);
+  position: relative;
+  margin: 1.3em 0;
+  padding: 0.8em 1.05em 0.8em 1.2em;
+  color: #b9c4cd;
+  background-color: rgba(66, 185, 131, 0.07);
+  border: none;
+  border-left: 3px solid var(--accent);
+  border-radius: 3px 8px 8px 3px;
+}
+
+/* 去掉块内首尾段落的额外外边距，引用看起来更整 */
+blockquote > p:first-child,
+blockquote > ul:first-child,
+blockquote > ol:first-child {
+  margin-top: 0;
+}
+
+blockquote > p:last-child,
+blockquote > ul:last-child,
+blockquote > ol:last-child {
+  margin-bottom: 0;
+}
+
+/* 嵌套引用：左侧再加一根淡线，靠层级区分 */
+blockquote blockquote {
+  margin: 0.6em 0;
+  background-color: rgba(66, 185, 131, 0.04);
+  border-left-color: rgba(66, 185, 131, 0.45);
+  color: #a9b4bd;
+}
+
+/* 引用里的链接保持可读 */
+blockquote a {
+  color: #4aa8e8;
 }
 
 /* 分割线 */
@@ -681,8 +711,7 @@ img {
 
 /* ========== 焦点模式 ========== */
 .on-focus-mode blockquote {
-  /* border-left-color: rgba(85, 85, 85, 0.12); */
-  border-left-color: rgb(242, 255, 0);
+  border-left-color: var(--accent);
 }
 
 .on-focus-mode .md-focus {
