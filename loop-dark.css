@@ -403,36 +403,27 @@ tt {
   margin: 0 2px;
 }
 
-/* 脚注标记 */
+/* 脚注标记：恢复原版的黑底橙字，加粗加边框，一眼能看见 */
 #write .md-footnote {
-  padding: 0 3px;
+  padding: 0 4px;
   border-radius: 4px;
-  background-color: rgba(66, 185, 131, 0.15);
-  color: #6fd6c4;
-  font-size: 0.8em;
-}
-
-/* 文末脚注定义：收紧行距、去掉多余段间距 */
-#write .footnotes {
-  opacity: 1;
+  background-color: hsla(0, 0%, 0%, 0.35);
+  color: #f3b37f;
   font-size: 0.85em;
-  margin-top: 0.5em;
-  margin-bottom: 0.5em;
+  font-weight: 600;
+  border: 1px solid rgba(243, 179, 127, 0.45);
 }
 
-#write .md-fn-count:after {
-  content: "";
+#write .md-footnote a {
+  color: inherit;
 }
 
-#write .footnote-line {
-  margin-top: 0.3em;
-  line-height: 1.5;
+/* 文末脚注区：行距回到原版，加一条上分隔线做区分 */
+#write .footnotes {
+  margin-top: 1.6em;
+  padding-top: 0.8em;
+  border-top: 1px solid rgba(163, 176, 189, 0.25);
 }
-
-#write .footnote-line > p {
-  margin: 0;
-}
-
 /* ========== 文本修饰 ========== */
 /* 高亮 */
 #write mark {
