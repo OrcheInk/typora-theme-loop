@@ -15,7 +15,7 @@
   --text-color: #a3b0bd;
 
   /* 字体：正文用比例字体，代码与行内码用 Fira，任何一环缺失都有兜底 */
-  --font-body: "Source Sans Pro", "Segoe UI", "Microsoft YaHei", "PingFang SC", system-ui, sans-serif;
+  --font-body: "Microsoft YaHei", "Segoe UI", "PingFang SC", system-ui, sans-serif;
   --font-code: "Fira Code", "FiraCode Nerd Font Mono", "Roboto Mono", "Microsoft YaHei", "PingFang SC", Consolas, monospace;
   --font-mono: var(--font-code);
   --font-monospace: var(--font-code);
