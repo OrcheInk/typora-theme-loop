@@ -14,13 +14,15 @@
   --item-hover-bg-color: var(--select-text-bg-color);
   --text-color: #a3b0bd;
 
-  /* 字体：拉丁走 Fira，中文走系统字体，任何一环缺失都能落到 monospace */
-  --font-mono: "Fira Code", "FiraCode Nerd Font Mono", "Roboto Mono", "Microsoft YaHei", "PingFang SC", Consolas, monospace;
-  --font-monospace: var(--font-mono);
-  --font-sans-serif: "Source Sans Pro", "Segoe UI", "Microsoft YaHei", "PingFang SC", system-ui, sans-serif;
+  /* 字体：正文用比例字体，代码与行内码用 Fira，任何一环缺失都有兜底 */
+  --font-body: "Source Sans Pro", "Segoe UI", "Microsoft YaHei", "PingFang SC", system-ui, sans-serif;
+  --font-code: "Fira Code", "FiraCode Nerd Font Mono", "Roboto Mono", "Microsoft YaHei", "PingFang SC", Consolas, monospace;
+  --font-mono: var(--font-code);
+  --font-monospace: var(--font-code);
+  --font-sans-serif: var(--font-body);
 
   --mermaid-theme: night;
-  --mermaid-font-family: var(--font-mono);
+  --mermaid-font-family: var(--font-body);
   --mermaid-sequence-numbers: on;
   --mermaid-flowchart-curve: basis;
   --mermaid--gantt-left-padding: 75;
@@ -37,7 +39,7 @@ html {
 }
 
 body {
-  font-family: var(--font-monospace);
+  font-family: var(--font-body);
   color: #baccd9;
   background-color: #1f1f1f;
   -webkit-font-smoothing: antialiased;
