@@ -16,7 +16,7 @@
 
   /* 字体：正文雅黑，代码与行内码用主题自带的 FiraCode Nerd Font Mono 子集 */
   --font-body: "Microsoft YaHei", sans-serif;
-  --font-code: "FiraCode Nerd Font Mono", monospace;
+  --font-code: "FiraCode Nerd Font Mono", "Microsoft YaHei", monospace;
   --font-mono: var(--font-code);
   --font-monospace: var(--font-code);
   --font-sans-serif: var(--font-body);
@@ -188,23 +188,23 @@ h3 {
   font-size: 1.6rem;
   line-height: 1.43;
   margin: 20px 0px 7px 0px;
-  color: #2fc0ad;
+  color: #12a99b;
   counter-reset: h4;
 }
 
 h4 {
   font-size: 1.45rem;
-  color: #2bb0a0;
+  color: #13a396;
 }
 
 h5 {
   font-size: 1.3rem;
-  color: #28a294;
+  color: #139c90;
 }
 
 h6 {
   font-size: 1.15rem;
-  color: #2a9c8e;
+  color: #14978a;
 }
 
 body > h2:first-child,
@@ -403,10 +403,29 @@ tt {
   margin: 0 2px;
 }
 
-/* 脚注 */
+/* 脚注标记 */
 #write .md-footnote {
-  background-color: hsla(0, 0%, 0%, 0.2);
-  color: #f3b37f;
+  padding: 0 3px;
+  border-radius: 4px;
+  background-color: rgba(66, 185, 131, 0.15);
+  color: #6fd6c4;
+  font-size: 0.8em;
+}
+
+/* 文末脚注定义：收紧行距、去掉多余段间距 */
+#write .footnotes {
+  opacity: 1;
+  font-size: 0.85em;
+  margin-top: 0.6em;
+}
+
+#write .footnote-line {
+  margin-top: 0.3em;
+  line-height: 1.5;
+}
+
+#write .footnote-line > p {
+  margin: 0;
 }
 
 /* ========== 文本修饰 ========== */
@@ -474,7 +493,7 @@ em {
 
 #write > ul > .task-list-done {
   text-decoration: line-through;
-  font-family: var(--font-mono);
+  font-family: var(--font-body);
   color: #454545;
 }
 
@@ -1091,7 +1110,9 @@ body.typora-export {
 }
 
 .cluster rect {
-  stroke-width: 10px !important;
+  stroke-width: 1.5px !important;
+  fill: rgba(66, 185, 131, 0.06) !important;
+  stroke: #3a5a52 !important;
 }
 
 .node rect,
@@ -1099,36 +1120,50 @@ body.typora-export {
 .node ellipse,
 .node polygon,
 .node path {
-  fill: #06436f !important;
-  stroke: #039db4 !important;
-  stroke-linejoin: bevel;
-  stroke-width: 3px !important;
+  fill: #1f3b4d !important;
+  stroke: #3f7f8c !important;
+  stroke-linejoin: round;
+  stroke-width: 1.5px !important;
 }
 
 .marker {
-  fill: #b2ff00 !important;
-  stroke: #b2ff00 !important;
+  fill: #6fb3c4 !important;
+  stroke: #6fb3c4 !important;
 }
 
 .flowchart-link {
-  stroke: #b2ff00 !important;
+  stroke: #6fb3c4 !important;
   fill: none;
-  stroke-width: 2px;
+  stroke-width: 1.5px;
 }
 
-.edgeLabel {
-  background-color: #8c8cbf !important;
-  color: rgb(255, 255, 255) !important;
-  border-radius: 5px;
+/* mermaid 用 SVG <text>，原来的 span.nodeLabel 根本匹配不到，文字一直用自带主题的深色 */
+.md-diagram-panel svg text,
+.md-diagram-panel .nodeLabel,
+.md-diagram-panel span.nodeLabel {
+  fill: #e8f4f2 !important;
+  color: #e8f4f2 !important;
+}
+
+/* 连线标签：Typora 强制 rect opacity:1，所以外框是方的；改成深底 + 圆角 */
+.md-diagram-panel .edgeLabel rect {
+  opacity: 1 !important;
+  fill: #26333a !important;
+  stroke: none !important;
+  rx: 4px;
+  ry: 4px;
+}
+
+.md-diagram-panel .edgeLabel {
+  background-color: transparent !important;
+  color: #e8f4f2 !important;
+  border-radius: 0;
   display: inline-block;
 }
 
 .labelBkg {
-  border-radius: 5px;
-}
-
-span.nodeLabel {
-  color: rgb(255, 255, 255) !important;
+  fill: #26333a !important;
+  border-radius: 4px;
 }
 
 /* 搜索栏 */
